@@ -24,13 +24,13 @@ DEFAULTVALUE              : 0.25
 !Soil Properties
 !Horizon 0-0.3
 <beginsoiltype>
-ID: 1.0
-THETA_R: 0.0595 !0.119
-THETA_S: 0.519
-N_FIT: 2.686 !1.343
-SAT_K: 5.16e-06
-ALPHA: 0.804
-L_FIT: 0.5
+ID           : 1.0
+THETA_R      : 0.1158
+THETA_S      : 0.4466
+N_FIT        : 2.2802
+SAT_K        : 2.187e-06
+ALPHA        : 1.423
+L_FIT        : 0.5
 <endsoiltype>
 
 CONDUTIVITYFACE           : 
@@ -52,10 +52,10 @@ DN_LINK_AREA_METHOD       : 2
 
 !Stability Options
 STABILIZE                 : 1
-STABILIZE_FACTOR          : 0.05    !fraction of cell volume allowed for volume variation in one time step (if STABILIZE : 1)
-MIN_ITERATIONS            : 2       !minimum number of internal iteration to start asking for a lower global dt
-MAX_ITERATIONS            : 1000    !maximum number of internal iterations allowed for the module
-DT_FACTOR                 : 1.5     !factor for next internal dt prediction (increase dt by the factor if stable. reduce otherwise)
+STABILIZE_FACTOR          : 0.05
+MIN_ITERATIONS            : 2
+MAX_ITERATIONS            : 1000
+DT_FACTOR                 : 1.5
 
 !Ground Water Aquifer Initialization
 <beginwaterlevel>
@@ -72,7 +72,6 @@ START_WITH_FIELD          : 0
 <beginimpermeablefraction>
 NAME                      : impermeablefraction
 INITIALIZATION_METHOD     : CONSTANT
-FILENAME                  : ../GeneralData/PorousMedia/impermeability.dat
 DEFAULTVALUE              : 0
 REMAIN_CONSTANT           : 0
 <endimpermeablefraction>

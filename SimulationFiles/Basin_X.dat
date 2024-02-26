@@ -4,11 +4,6 @@ VERIFY_MASS               : 1
 
 !Compute Options. Modules active
 ATMOSPHERE                : 0
-EVAPOTRANSPIRATION        : 0
-EVAPOTRANSPIRATION_METHOD : 2
-EVAP_METHOD               : 2       !Evaporation from canopy and water column method !1 - latent heat method, 2 - uses potential evaporation !3 - no evaporation from canopy and water column
-EVAP_FROM_WATER_COLUMN    : 0
-EVAP_FROM_CANOPY          : 0
 POROUS_MEDIA              : 0
 RUN_OFF                   : 0
 SCSCN_RUNOFF_MODEL        : 0
@@ -18,6 +13,12 @@ POROUS_MEDIA_PROPERTIES   : 0
 RUN_OFF_PROPERTIES        : 0
 RESERVOIRS                : 0
 
+!Evapotranspiration
+EVAPOTRANSPIRATION        : 0
+EVAPOTRANSPIRATION_METHOD : 2
+EVAP_METHOD               : 2
+EVAP_FROM_WATER_COLUMN    : 0
+EVAP_FROM_CANOPY          : 0
 DEFAULT_KC_WHEN_LAI_ZERO  : 0.15
 
 !initial DT when raining
